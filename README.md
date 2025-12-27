@@ -1,47 +1,31 @@
-# Git Worktree Komendy - Pełna Dokumentacja
+# 🚀 Claude Worktree Commands
 
 Zestaw 4 globalnych komend Claude Code do zarządzania Git worktree'ami.
 
 ---
 
-## 📦 Instalacja
+## ⚡ Szybka Instalacja
 
-### Gdzie umieścić komendy?
-
-Komendy należy umieścić w **jednym z dwóch miejsc:**
-
-#### Opcja 1: Globalne (dla wszystkich projektów)
+### Krok 1: Klonuj repo
 ```bash
-~/.claude/commands/
+git clone https://github.com/ghost10101110/claude-worktree-commands.git
+cd claude-worktree-commands
 ```
 
-Komendy będą dostępne we wszystkich projektach.
-
-#### Opcja 2: Lokalne (tylko dla jednego projektu)
-```bash
-/ścieżka/do/projektu/.claude/commands/
+### Krok 2: Otwórz Claude Code i wpisz:
+```
+zainstaluj mi te bash komendy globalnie do ~/.claude/commands/
 ```
 
-Komendy będą dostępne tylko w tym projekcie.
+### Krok 3: Restart Claude Code
 
-### Instalacja - Kroki
-
-1. Skopiuj pliki `.md` do wybranej lokalizacji:
-   ```bash
-   cp worktree-*.md ~/.claude/commands/
-   ```
-
-2. Zamknij i otwórz Claude Code
-
-3. Komenda będzie dostępna:
-   ```
-   /worktree-setup
-   /worktree-commit
-   /worktree-merge
-   /worktree-cleanup
-   ```
+Gotowe! ✅
 
 ---
+
+## 📚 Pełna Dokumentacja
+
+Każda komenda ma szczegółową dokumentację:
 
 ## 🎯 Analogia - Zrozumienie Pojęć
 
