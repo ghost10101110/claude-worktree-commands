@@ -32,7 +32,7 @@ Każda komenda ma szczegółową dokumentację:
 - **BRANCH (teczka)** = folder z dokumentami projektu (np. `feature/auth`)
 - **WORKTREE (biurko)** = osobne miejsce pracy gdzie pracujesz nad teczką
 - **COMMIT (raport)** = zapis pracy którą zrobiłeś
-- **MERGE** = przeniesienie raportu z biurka do teczki szefa (main)
+- **MERGE** = przeniesienie raportu z biurka do teczki głównej (main)
 
 ---
 
