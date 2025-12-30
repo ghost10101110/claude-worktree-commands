@@ -20,16 +20,18 @@ Stwórz nowe biurko robocze (worktree) z własną teczką (branch) i raportem (c
 
 ### Krok 1: Weryfikacja Git Repository
 
-Sprawdzenie czy jesteśmy w folderze z git repo.
+Sprawdzenie czy jesteśmy w folderze z git repo. Jednocześnie wyodrębniamy nazwę projektu z bieżącego katalogu.
 
 ```
 🔍 Szukam folderu .git...
+📍 Nazwa projektu: agent-youtuber
 ```
 
 **Jeśli `.git` ZNALEZIONY:**
 ```
 ✅ Znaleziono git repository!
-📍 Lokalizacja: /Users/username/Projects/my-project
+📍 Lokalizacja: /Users/username/Projects/agent-youtuber
+📁 Nazwa projektu: agent-youtuber
 
 Możemy kontynuować → przejdź do Kroku 2
 ```
@@ -121,8 +123,8 @@ Menu wyboru ścieżki:
 ```
 📍 Gdzie utworzyć biurko robocze (worktree)?
 
-1️⃣  ../[branch-name] (domyślnie)
-   Np: ../feature-auth-system
+1️⃣  ../[project-name]--[branch-name] (domyślnie)
+   Np: ../agent-youtuber--api-youtube-implementation
 
 2️⃣  Inny folder...
    (wpisz własną ścieżkę)
@@ -130,12 +132,12 @@ Menu wyboru ścieżki:
 Wybierz numer (1-2):
 ```
 
-Jeśli wybierze 1 → użyj skonwertowanej nazwy branch'a
+Jeśli wybierze 1 → użyj nazwy projektu + `--` + skonwertowana nazwa branch'a
 Jeśli wybierze 2 → czekaj na custom ścieżkę
 
 **Jeśli biurko już istnieje:**
 ```
-❌ BŁĄD: Biurko już istnieje w: ../feature-auth-system
+❌ BŁĄD: Biurko już istnieje w: ../agent-youtuber--api-youtube-implementation
 
 Opcje:
 1️⃣  Usuń stare biurko (git worktree remove)
@@ -187,7 +189,7 @@ Podsumowanie przed wykonaniem:
 📋 PODSUMOWANIE:
 
 Teczka (Branch):    feature/auth-system
-Biurko (Worktree):  ../feature-auth-system
+Biurko (Worktree):  ../agent-youtuber--feature-auth-system
 Raport (Commit):    Initial: feature/auth-system setup
 
 Czy utworzyć? (t/n)
@@ -198,10 +200,10 @@ Czy utworzyć? (t/n)
 Wykonaj komendy:
 ```bash
 # 1. Tworzenie biurka roboczego
-git worktree add -b feature/auth-system ../feature-auth-system main
+git worktree add -b feature/auth-system ../agent-youtuber--feature-auth-system main
 
 # 2. Przejście do biurka
-cd ../feature-auth-system
+cd ../agent-youtuber--feature-auth-system
 
 # 3. Inicjalizacja git
 git init
@@ -222,11 +224,11 @@ git commit -m "Initial: feature/auth-system setup"
 
 📊 Informacje:
 - Teczka (Branch): feature/auth-system
-- Biurko (Worktree): /Users/username/Projects/my-project/../feature-auth-system
+- Biurko (Worktree): /Users/username/Projects/agent-youtuber/../agent-youtuber--feature-auth-system
 - Ostatni raport: Initial: feature/auth-system setup
 
 🚀 Następnie:
-cd ../feature-auth-system
+cd ../agent-youtuber--feature-auth-system
 
 Możesz teraz pracować na nowym biurku!
 ```
